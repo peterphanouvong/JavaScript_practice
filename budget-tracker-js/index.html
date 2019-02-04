@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Budget Tracker App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="main-header">Budget Tracker App</h1>
+
+    <div class="content-section budget-section">
+        <div class="form-group">
+            <label for="budgetInput"><h3>Please Enter Your Budget</h3></label>
+            <input type="text" class="form-control budget-input" id="budgetInput">
+        </div>
+        <button type="submit" class="btn btn-outline-success" id="addBudgetButton">Calculate</button>
+    </div>
+
+
+
+    <div class="content-section expense-section">
+        <div class="form-group">
+            <label for="expenseName"><h3>Please Enter Your Expense</h3></label>
+            <input type="text" class="form-control expense-input" id="expenseName">
+        </div>
+        <div class="form-group">
+            <label for="expenseValue"><h3>Please Enter Your Expense Amount</h3></label>
+            <input type="text" class="form-control expense-input" id="expenseValue">
+        </div>
+        <button type="submit" class="btn btn-outline-danger" id="addExpenseButton">Add Expense</button>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Budget</td>
+                    <td>Expenses</td>
+                    <td>Balance</td>
+                </tr>
+            </thead>
+            <tbody id="main-table-body">
+                <tr>
+                    <td id="overallBudget"></td>
+                    <td id="overalExpenses"></td>
+                    <td id="balance"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Expense Name</td>
+                    <td>Expense Value</td>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+<tr>
+    <td></td>
+</tr>
